@@ -1,0 +1,17 @@
+{
+  "samples": 28,
+  "reference_categories": 14,
+  "one_isotope_reference_entries": 18,
+  "figures": 4,
+  "figure_formats": [
+    "PNG 600 dpi",
+    "PDF",
+    "SVG"
+  ],
+  "pdf_pages": 4,
+  "max_input_conversion_residual_permil": 4.696000000059541e-05,
+  "literature_review_of_10_top_journals": "BLOCKED; not completed",
+  "uploaded_skills": "BLOCKED: ZIP exceeds 32 MiB transfer limit",
+  "figure_inspection": "PNG opened; PDF page count/text checked",
+  "source_files_unchanged": true
+}

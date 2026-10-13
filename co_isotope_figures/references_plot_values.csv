@@ -1,0 +1,19 @@
+isotope,label,low,high,reference_scale,display_type,independently_verified
+C,Marine DIC,0.0,0.0,VPDB,point,False
+C,Shuikoushan limestone,-0.5,0.3,VPDB,interval,False
+C,Cocos Ridge sediment,0.6,1.9,VPDB,interval,False
+C,Primary igneous carbonate,-8.0,-2.0,VPDB,interval,False
+C,Mantle carbon,-5.0,-5.0,VPDB,point,False
+C,MORB glass CO2,-7.5,-4.2,VPDB,interval,False
+C,Atmospheric CO2,-8.0,-6.5,VPDB,two_time_points,False
+C,Ancient organic carbon,-32.0,-26.0,VPDB,interval,False
+C,Modern organic carbon,-22.0,-18.0,VPDB,interval,False
+C,Microbial methane,-110.0,-55.0,VPDB,interval,False
+C,Kangjiawan ore calcite,-3.7,-1.8,VPDB,interval,False
+O,Ocean water,0.0,0.0,VSMOW,point,False
+O,Shuikoushan limestone,14.1,16.8,VSMOW,interval,False
+O,Cocos Ridge sediment,21.0,28.0,VSMOW,interval,False
+O,Primary igneous carbonate,6.5,9.5,VSMOW,interval,False
+O,Upper-mantle rock,5.4,6.0,VSMOW,interval,False
+O,Granite whole rock,7.0,10.0,VSMOW,interval,False
+O,Kangjiawan ore calcite,12.2,16.0,VSMOW,interval,False
