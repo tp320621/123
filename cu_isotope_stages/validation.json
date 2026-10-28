@@ -1,0 +1,19 @@
+{
+  "analysis_rows": 40,
+  "counts": {
+    "early": 2,
+    "main": 30,
+    "late": 8
+  },
+  "source": "Manual transcription of user-provided screenshot; not an original spreadsheet",
+  "screenshot_order_within_stages_preserved": true,
+  "same_visible_prefix_rows_not_merged": true,
+  "uncertainty_assumption": "reported 2SD is plotted as +/-2SD (half-width)",
+  "within_stage_y_positions": "layout only; not depth or time",
+  "reference_standard": "not specified; no standard assigned",
+  "CC_reference_band": "not copied because no numeric definition was provided",
+  "missing_depth_rows": [
+    39
+  ],
+  "data_status": "screenshot transcription; check against original spreadsheet before publication"
+}
