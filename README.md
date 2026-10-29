@@ -27,4 +27,4 @@ python3 plot_co.py
 
 ## 铜同位素：单矿床早—主—晚期
 
-[查看 δ⁶⁵Cu 阶段图、下载文件及转录数据](cu_isotope_stages/README.md)。按截图数据绘制，共 40 条分析；每条误差棒为均值 ±2SD。
+[查看 δ⁶⁵Cu 阶段图、下载文件及转录数据](cu_isotope_stages/README.md)。已替换为按矿物区分的新版：Cc、Bn、Bn3、Cv；保留早—主—晚期分区，共 40 条分析，每条误差棒为均值 ±2SD。

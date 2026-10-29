@@ -1,38 +1,46 @@
-# 单矿床早—主—晚期铜同位素图
+# 单矿床铜同位素：按矿物区分图例
 
-按用户第二张参考图的样式制作：横轴 δ⁶⁵Cu（‰），每条分析以水平 H 形误差棒表示，阶段之间使用点状横线分隔，保留粗底轴。这里只表示一个矿床，因此三个分组为**早期、主成矿期、晚期**，不是三个矿床。
+上一版按阶段着色的铜同位素 PNG、PDF、SVG、预览图及旧绘图脚本已从仓库当前版本移除，替换为本版。早期、主成矿期、晚期仍以三个分区表示，**颜色和下方图例表示矿物及用户提供的矿物标签**。没有改动原先的 C–O 图件。
 
-![中文图件](Cu_stages_CN_preview.png)
+![新版预览](Cu_minerals_CN_preview.png)
 
-- [中文高清 PNG](Cu_stages_CN.png) / [中文 PDF](Cu_stages_CN.pdf) / [中文 SVG](Cu_stages_CN.svg)
-- [英文高清 PNG](Cu_stages_EN.png) / [英文 PDF](Cu_stages_EN.pdf) / [英文 SVG](Cu_stages_EN.svg)
-- [截图转录数据](data_transcribed.csv)
+- [中文 PNG](Cu_minerals_CN.png) / [中文 PDF](Cu_minerals_CN.pdf) / [中文 SVG](Cu_minerals_CN.svg)
+- [英文 PNG](Cu_minerals_EN.png) / [英文 PDF](Cu_minerals_EN.pdf) / [英文 SVG](Cu_minerals_EN.svg)
+- [矿物分组数据](data_minerals.csv)
+- [原截图转录数据](data_transcribed.csv)
 
-## 数据处理
+## 根据用户回复确认的矿物分组
 
-- 从用户第一张截图逐行转录了 40 条分析：早期 2、主成矿期 30、晚期 8。
-- 每一行单独绘制，未因可见样品编号相同而合并。截图里的样品编号有截断，`sample_visible` 仅保留可见字符串，不视为完整唯一编号。
-- 表中 `2SD` 按均值左右各一个所报 2SD 绘制，即 **δ⁶⁵Cu ± 2SD**；未将此列再除以 2。这个解释需要在正式使用前与原表表头确认。
-- 早期依据“早期Bn”归组；其他阶段严格依据截图的“主成矿期”和“晚期”标注。“主成矿期 Bn 同位素”仍归为主成矿期。
-- 每个阶段内从上到下保留截图顺序。纵向位置仅为排版，既不表示深度也不表示连续时间；各组带宽相同，不表示持续时间。
-- 数据表保留可见深度；第 39 条 BF016-1- 深度空缺，不补值。深度没有参与本图坐标计算。
-- 颜色按阶段区分：早期绿、主期蓝、晚期橙；没有从颜色反推矿物种类。截图中只对部分分析注明 Bn、Cv，未把全部数据强制分为某种矿物。
-- 没有 δ⁶⁵Cu 标准物质说明，不自行补写 NIST 976 等标准名称。
-- 未照搬参考图的“CC”灰带，因为用户没有提供该带的定义或范围。浅灰虚线仅标示 δ⁶⁵Cu=0‰，没有赋予其来源意义。
-- 当前数据为**截图人工转录版**，不是原始 Excel 的直接读取版。论文正式使用前请用原始电子表格核对数值、阶段、完整编号及 2SD 含义。
+| 图例 | 条数 | 分析行号 | 依据 |
+|---|---:|---|---|
+| Cc，辉铜矿（蓝色） | 32 | 未注明矿物的其余行 | 用户确认其余 32 条均为 Cc |
+| Bn，斑铜矿（橙色） | 3 | 28、29、30 | 原截图明确标出 Bn |
+| Bn3，斑铜矿（棕色） | 2 | 2、3 | BF5-5-2 两条，用户回复原文“2、Bn3” |
+| Cv，铜蓝（绿色） | 3 | 35、36、37 | 原截图明确标出“打在Cv” |
+
+Bn3 按用户标签原样保留，未将其他 Bn 改为 Bn3，也不由数字 3 额外推断成矿期次。这两条分析仍属于截图指定的主成矿期。
+
+## 数据与排版
+
+- 共 40 条分析全部保留：早期 2、主成矿期 30、晚期 8。没有将可见编号重复的记录合并为均值。
+- 每条 H 形水平误差棒表示 δ⁶⁵Cu 均值 ±2SD；截图中的 2SD 列作为误差半宽，未再次除以 2。
+- 点状横线分隔阶段，粗底轴及下方矿物图例参照用户给出的图件样式。颜色表示矿物，不再表示成矿阶段。
+- 同阶段内，不相交的误差区间可以共用一行；纵向位置仅用于排版，不表示深度或先后顺序。`point_row_mapping.csv` 将图中位置映射回原始截图行号。
+- 没有照搬原图中定义未知的 CC 灰带。浅灰虚线仅表示 δ⁶⁵Cu=0‰，不代表某种来源范围。
+- `sample_visible` 只保留截图可见编号片段。第 39 条深度缺失，不补值；深度不参与本图坐标计算。
+- 原始测量值及阶段保存在 `data_transcribed.csv`；用户确认后的矿物分类及判定依据保存在 `data_minerals.csv`。脚本会核对两表的数值和阶段完全一致。
+- δ⁶⁵Cu 的标准物质名称未提供，不自行补写。
 
 ## 建议图注
 
-**中文：** 单矿床不同成矿阶段的铜同位素组成。每个水平误差棒表示截图中一条分析的 δ⁶⁵Cu 均值及所报 ±2SD；颜色分别表示早期（绿色，n=2）、主成矿期（蓝色，n=30）和晚期（橙色，n=8）。点状横线分隔阶段，阶段内纵向排列仅用于显示各条分析，不代表深度或连续时间。浅灰虚线为 δ⁶⁵Cu=0‰。
-
-**English:** Copper isotope compositions of a single deposit grouped into early (green, n=2), main ore (blue, n=30), and late (orange, n=8) stages. Each horizontal bar represents one reported mean δ⁶⁵Cu value with ±2SD as transcribed from the supplied table. Dotted lines separate stages; vertical offsets within each stage are for display only and do not represent depth or a continuous chronology. The pale dashed line marks δ⁶⁵Cu=0‰.
+单矿床早期、主成矿期和晚期的铜同位素组成。每个 H 形水平误差棒表示一条分析的 δ⁶⁵Cu 均值 ±2SD；颜色分别表示 Cc（辉铜矿）、Bn（斑铜矿）、用户标记的 Bn3（斑铜矿）和 Cv（铜蓝）。点状横线分隔阶段，纵向排列仅用于显示各条分析，不表示深度或连续时间。灰色竖虚线标示 δ⁶⁵Cu=0‰。
 
 ## 复现
 
 在具备 numpy、pandas、matplotlib 和 Noto Serif CJK 字体的环境中运行：
 
 ```bash
-python3 plot_stages.py
+python3 plot_minerals.py
 ```
 
-`point_row_mapping.csv` 将图中的纵向位置映射回截图分析行号，便于核对。`stage_summary.csv` 为分组数量与实测 δ⁶⁵Cu 范围，不是分组均值或过程模型。
+程序生成中文和英文两个排版版本，各有 600 dpi PNG、矢量 PDF、可编辑 SVG 及预览图。测量数据来自截图人工转录，正式投稿前建议用原始电子表格核对。

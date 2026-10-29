@@ -5,15 +5,18 @@
     "main": 30,
     "late": 8
   },
-  "source": "Manual transcription of user-provided screenshot; not an original spreadsheet",
-  "screenshot_order_within_stages_preserved": true,
-  "same_visible_prefix_rows_not_merged": true,
-  "uncertainty_assumption": "reported 2SD is plotted as +/-2SD (half-width)",
-  "within_stage_y_positions": "layout only; not depth or time",
-  "reference_standard": "not specified; no standard assigned",
-  "CC_reference_band": "not copied because no numeric definition was provided",
-  "missing_depth_rows": [
-    39
-  ],
-  "data_status": "screenshot transcription; check against original spreadsheet before publication"
+  "mineral_counts": {
+    "Cc": 32,
+    "Bn": 3,
+    "Cv": 3,
+    "Bn3": 2
+  },
+  "legend_encodes": "mineral; stage is encoded by vertical section only",
+  "source": "user screenshot and subsequent user confirmation",
+  "mineral_assignment_complete": true,
+  "Bn3": "literal user label for rows 2 and 3; no extra chronology inferred",
+  "within_stage_y_positions": "interval packing for display only",
+  "uncertainty": "mean +/- supplied 2SD",
+  "original_measurements_preserved": true,
+  "CC_band": "not copied; numeric range not provided"
 }
