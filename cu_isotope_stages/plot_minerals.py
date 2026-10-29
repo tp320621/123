@@ -19,12 +19,11 @@ assert len(d)==40 and d.row.is_unique and set(d.row)==set(raw.row)
 for col in ['delta65Cu_permil','two_SD_permil','stage']:
     assert d[col].equals(raw[col]), f'Original {col} values must remain unchanged'
 assert d.groupby('stage').size().to_dict()=={'early':2,'late':8,'main':30}
-assert d.mineral.value_counts().to_dict()=={'Cc':32,'Bn':3,'Cv':3,'Bn3':2}
+assert d.mineral.value_counts().to_dict()=={'Cc':32,'Bn':5,'Cv':3}
 assert d.two_SD_permil.gt(0).all()
 STYLES={
     'Cc':('#069ED0','Cc  辉铜矿','Cc  Chalcocite'),
     'Bn':('#F18719','Bn  斑铜矿','Bn  Bornite'),
-    'Bn3':('#AD6526','Bn3  斑铜矿','Bn3  Bornite'),
     'Cv':('#60A579','Cv  铜蓝','Cv  Covellite'),
 }
 plt.rcParams.update({'font.family':'DejaVu Serif','font.size':11,
@@ -97,7 +96,7 @@ d.groupby(['stage','mineral']).agg(n=('row','size'),min_delta65Cu=('delta65Cu_pe
     'legend_encodes':'mineral; stage is encoded by vertical section only',
     'source':'user screenshot and subsequent user confirmation',
     'mineral_assignment_complete':True,
-    'Bn3':'literal user label for rows 2 and 3; no extra chronology inferred',
+    'BF5_5_2':'rows 2 and 3 confirmed as Bn by user',
     'within_stage_y_positions':'interval packing for display only',
     'uncertainty':'mean +/- supplied 2SD','original_measurements_preserved':True,
     'CC_band':'not copied; numeric range not provided'},ensure_ascii=False,indent=2),encoding='utf-8')

@@ -2,6 +2,5 @@ stage,mineral,n,min_delta65Cu,max_delta65Cu
 early,Bn,2,0.78,1.16
 late,Cc,5,-0.93,-0.17
 late,Cv,3,0.97,1.92
-main,Bn,1,1.68,1.68
-main,Bn3,2,-1.17,-0.91
+main,Bn,3,-1.17,1.68
 main,Cc,27,0.31,1.76

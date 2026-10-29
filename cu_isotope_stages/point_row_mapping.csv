@@ -1,8 +1,8 @@
 row,stage,mineral,y_layout_only
 30,early,Bn,2.5
 29,early,Bn,2.5
-2,main,Bn3,1.8825
-3,main,Bn3,1.7975
+2,main,Bn,1.8825
+3,main,Bn,1.7975
 9,main,Cc,1.8825
 15,main,Cc,1.8825
 17,main,Cc,1.7975

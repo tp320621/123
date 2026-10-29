@@ -1,7 +1,7 @@
 row,sample_visible,delta65Cu_permil,two_SD_permil,depth_m,stage,notes,mineral,mineral_basis
 1,BF5-1-1-,-0.93,0.45,-10.0,late,,Cc,User confirmed all 32 previously unassigned records are Cc
-2,BF5-5-2-,-1.17,0.22,-10.0,main,主成矿期；部分打Bn上Cc小（截图备注）,Bn3,User label Bn3 for BF5-5-2 rows 2 and 3; not extrapolated to other rows
-3,BF5-5-2-,-0.91,0.23,-10.0,main,主成矿期；部分打Bn上Cc小（截图备注）,Bn3,User label Bn3 for BF5-5-2 rows 2 and 3; not extrapolated to other rows
+2,BF5-5-2-,-1.17,0.22,-10.0,main,主成矿期；部分打Bn上Cc小（截图备注）,Bn,User corrected BF5-5-2 rows 2 and 3 to Bn
+3,BF5-5-2-,-0.91,0.23,-10.0,main,主成矿期；部分打Bn上Cc小（截图备注）,Bn,User corrected BF5-5-2 rows 2 and 3 to Bn
 4,BF5-3-1-,0.55,0.01,-10.0,main,,Cc,User confirmed all 32 previously unassigned records are Cc
 5,BF5-3-1-,1.25,0.04,-10.0,main,,Cc,User confirmed all 32 previously unassigned records are Cc
 6,BF7-1-1-,-0.17,0.05,-70.0,late,,Cc,User confirmed all 32 previously unassigned records are Cc

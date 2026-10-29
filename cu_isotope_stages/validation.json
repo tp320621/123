@@ -7,14 +7,13 @@
   },
   "mineral_counts": {
     "Cc": 32,
-    "Bn": 3,
-    "Cv": 3,
-    "Bn3": 2
+    "Bn": 5,
+    "Cv": 3
   },
   "legend_encodes": "mineral; stage is encoded by vertical section only",
   "source": "user screenshot and subsequent user confirmation",
   "mineral_assignment_complete": true,
-  "Bn3": "literal user label for rows 2 and 3; no extra chronology inferred",
+  "BF5_5_2": "rows 2 and 3 confirmed as Bn by user",
   "within_stage_y_positions": "interval packing for display only",
   "uncertainty": "mean +/- supplied 2SD",
   "original_measurements_preserved": true,
